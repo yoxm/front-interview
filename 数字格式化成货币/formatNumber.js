@@ -27,3 +27,4 @@ const formatNum3 = str => {
 console.log(formatNum1("1234567890"));
 console.log(formatNum2("1234567890"));
 console.log(formatNum3("1234567890"));
+ 
