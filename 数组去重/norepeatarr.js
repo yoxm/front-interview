@@ -1,19 +1,6 @@
-let a = [
-  1,
-  3,
-  5,
-  "1",
-  "23",
-  "5",
-  1,
-  3,
-  5,
-  { name: "yoyo" },
-  { name: "yoyo", age: "123" },
-  { name: "yoyo", age: "123" }
-];
+const arr = [1, 2, 3, '1', '2', 3, 5, 1, {"name": 'Yoyo'}, {'name': 'Yoyo'}]
 
-const unique4 = arr => {
+const unique = arr => {
     let res = [];
     for (let i = 0; i < arr.length; i++) {
         let ele = arr[i];
@@ -30,7 +17,7 @@ const unique4 = arr => {
      return res;
 };
 
-const unique = arr => {
+const unique1 = arr => {
   let obj = {};
   return arr.filter(
     item =>
@@ -48,10 +35,10 @@ const unique2 = arr => {
 
 const unique3 = arr => [...new Set(arr)];
 
-console.log(unique(a));
+console.log(unique(arr));
 
-console.log(unique2(a));
+console.log(unique1(arr));
 
-console.log(unique3(a));
+console.log(unique2(arr));
 
-console.log(unique4(a));
+console.log(unique3(arr));
