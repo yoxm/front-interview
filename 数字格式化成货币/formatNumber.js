@@ -23,8 +23,13 @@ const formatNum3 = str => {
     return (str*1).toLocaleString('en-US');
 }
 
+const formatNum4 = str => {
+  return str.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
 
-console.log(formatNum1("1234567890"));
-console.log(formatNum2("1234567890"));
-console.log(formatNum3("1234567890"));
+
+console.log(formatNum1("1234567890.123"));
+console.log(formatNum2("1234567890.123"));
+console.log(formatNum3("1234567890.123"));
+console.log(formatNum4("1234567890.123"));
  
